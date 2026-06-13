@@ -1,39 +1,159 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>コーナー参加団体向けページ</title>
+
+<style>
+body{
+    margin:0;
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    background:#f4f8fc;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2196f3,#4caf50);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:2.5em;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1em;
+}
+
+.container{
+    max-width:900px;
+    margin:30px auto;
+    padding:0 20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-top:0;
+    color:#2196f3;
+    border-left:6px solid #ffca28;
+    padding-left:10px;
+}
+
+.button{
+    display:inline-block;
+    background:#2196f3;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.button:hover{
+    opacity:0.9;
+}
+
+.notice{
+    background:#fff8e1;
+    border-left:8px solid #ffc107;
+}
+
+.back{
+    text-align:center;
+    margin-top:30px;
+}
+
+.back a{
+    display:inline-block;
+    background:#4caf50;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    background:#2196f3;
+    color:white;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
 </head>
 <body>
 
-<h1>コーナー参加団体向けページ</h1>
+<header>
+    <h1>🎪 コーナー参加団体向けページ</h1>
+    <p>花水地区子ども大会</p>
+</header>
 
-<p>
-花水地区子ども大会のコーナー参加団体向けのページです。
-</p>
+<div class="container">
 
-<h2>📝 アンケート</h2>
+    <div class="card notice">
+        <h2>📢 ご案内</h2>
+        <p>
+            コーナー参加団体の皆さま向けのページです。<br>
+            アンケート回答やお問い合わせはこちらからお願いします。
+        </p>
+    </div>
 
-<p>
-<a href="https://forms.gle/gc57FErAugRbTRGC7" target="_blank">
-▶ コーナー参加団体アンケート
-</a>
-</p>
+    <div class="card">
+        <h2>📝 コーナー参加団体アンケート</h2>
+        <p>
+            コーナー計画書の提出や各種確認のため、
+            アンケートへのご回答をお願いいたします。
+        </p>
 
-<h2>📧 お問い合わせ</h2>
+        <a class="button"
+           href="https://forms.gle/gc57FErAugRbTRGC7"
+           target="_blank">
+           ▶ アンケートを開く
+        </a>
+    </div>
 
-<p>
-<a href="https://forms.gle/u6qFCNYD81A14tWXA" target="_blank">
-▶ お問い合わせフォーム
-</a>
-</p>
+    <div class="card">
+        <h2>📧 お問い合わせ</h2>
+        <p>
+            ご質問やご相談がございましたら、
+            お問い合わせフォームをご利用ください。
+        </p>
 
-<p>
-<a href="index.html">
-🏠 トップページへ戻る
-</a>
-</p>
+        <a class="button"
+           href="https://forms.gle/u6qFCNYD81A14tWXA"
+           target="_blank">
+           ▶ お問い合わせフォーム
+        </a>
+    </div>
+
+    <div class="back">
+        <a href="index.html">
+            🏠 トップページへ戻る
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    花水地区子ども大会実行委員会
+</footer>
 
 </body>
 </html>
+```
