@@ -1,8 +1,132 @@
-```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花水地区子ども大会</title>
+
+<style>
+body{
+    margin:0;
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    background:#f8fbff;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#4fc3f7,#81c784);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:3em;
+}
+
+header p{
+    font-size:1.2em;
+    margin-top:15px;
+}
+
+nav{
+    background:#fff;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+    text-decoration:none;
+    color:#2196f3;
+    font-weight:bold;
+    margin:0 15px;
+}
+
+section{
+    max-width:1000px;
+    margin:30px auto;
+    padding:20px;
+}
+
+h2{
+    color:#2196f3;
+    border-left:8px solid #ffca28;
+    padding-left:10px;
+}
+
+.info{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.qa{
+    background:white;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.08);
+}
+
+.notice{
+    background:#fff8e1;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    font-weight:bold;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#2196f3;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
 <header>
     <h1>🌈 花水地区子ども大会 🌈</h1>
     <p>小学校でスポーツや遊びなど、いろいろな体験をしてみよう！！</p>
 </header>
+
+<nav>
+    <a href="#overview">開催概要</a>
+    <a href="#schedule">開催時間</a>
+    <a href="#corner">コーナー</a>
+    <a href="#map">会場案内</a>
+    <a href="#faq">Q&A</a>
+</nav>
+
+<section>
+    <div class="notice">
+        🚶 駐車場はありません。徒歩でご来場ください。<br><br>
+        🚲 保護者・スタッフのみ自転車利用できます。<br><br>
+        ❌ 子どもの自転車での来場はできません。
+    </div>
+</section>
 
 <section id="overview">
     <h2>📅 開催概要</h2>
@@ -36,18 +160,123 @@
     </div>
 </section>
 
+<section id="corner">
+    <h2>🎪 コーナーエリア</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>🏃 運動場</h3>
+            <p>スポーツや体験コーナーがあります。</p>
+        </div>
+
+        <div class="card">
+            <h3>🏀 体育館</h3>
+            <p>ゲームや楽しい体験コーナーがあります。</p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 体育室</h3>
+            <p>工作やチャレンジコーナーがあります。</p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 中庭</h3>
+            <p>屋外で楽しめるコーナーがあります。</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="map">
+    <h2>🗺️ 会場案内</h2>
+
+    <div class="info">
+        <ul>
+            <li>🏃 運動場コーナー</li>
+            <li>🏀 体育館コーナー</li>
+            <li>🎨 体育室コーナー</li>
+            <li>🌳 中庭コーナー</li>
+            <li>🏁 受付で受付後、各コーナーへお進みください。</li>
+        </ul>
+    </div>
+</section>
+
+<section id="faq">
+    <h2>❓ よくある質問</h2>
+
+    <div class="qa">
+        <strong>Q. 申込みは必要ですか？</strong><br>
+        A. 事前に学校からのお知らせをご確認ください。
+    </div>
+
+    <div class="qa">
+        <strong>Q. 雨の場合は？</strong><br>
+        A. ホームページ等でお知らせします。
+    </div>
+
+    <div class="qa">
+        <strong>Q. 駐車場はありますか？</strong><br>
+        A. 駐車場はありません。
+    </div>
+
+    <div class="qa">
+        <strong>Q. 自転車で行けますか？</strong><br>
+        A. 保護者・スタッフのみ利用できます。
+    </div>
+
+</section>
+```html id="1xhw3t"
+<section>
+    <h2>📝 コーナー参加団体の皆さまへ</h2>
+
+    <div class="info">
+        <p>
+            コーナーを担当される団体の皆さまは、
+            下記アンケートへのご回答をお願いいたします。
+        </p>
+
+        <p>
+            <a href="https://forms.gle/gc57FErAugRbTRGC7" target="_blank">
+                ▶ 子ども大会 コーナー参加団体アンケート
+            </a>
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>📧 お問い合わせ</h2>
+
+    <div class="info">
+        <p>
+            ご質問やご相談がございましたら、
+            下記お問い合わせフォームをご利用ください。
+        </p>
+
+        <p>
+            <a href="https://forms.gle/u6qFCNYD81A14tWXA" target="_blank">
+                ▶ お問い合わせフォーム
+            </a>
+        </p>
+    </div>
+</section>
+
 <section>
     <h2>📧 お問い合わせ</h2>
     <div class="info">
         <p>
-        花水地区子ども大会実行委員会<br>
-        📧 hanamizu_kidsfes@googlegroups.com
+        花水地区青少年指導員<br>
+        hanamizu_kidsfes@googlegroups.com
         </p>
     </div>
 </section>
 
 <footer>
-    <p>🌈 みんな遊びに来てね！ 🌈</p>
-    <p>楽しいコーナーがたくさん待っているよ！</p>
+　　<p>🌈 みんな遊びに来てね！ 🌈</p>
+　　　　　
+　　<p>楽しいコーナーがたくさん待っているよ！</p>
 </footer>
-```
+
+</body>
+</html>
+
