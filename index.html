@@ -22,12 +22,13 @@ header{
 }
 
 header h1{
+    margin:0;
     font-size:3em;
-    margin-bottom:10px;
 }
 
 header p{
     font-size:1.2em;
+    margin-top:15px;
 }
 
 nav{
@@ -56,6 +57,13 @@ h2{
     padding-left:10px;
 }
 
+.info{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
 .card-container{
     display:flex;
     flex-wrap:wrap;
@@ -71,23 +79,21 @@ h2{
     box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
-.card h3{
-    margin-top:0;
-}
-
-.info{
-    background:white;
-    border-radius:15px;
-    padding:20px;
-    box-shadow:0 3px 8px rgba(0,0,0,0.1);
-}
-
 .qa{
     background:white;
     margin-bottom:15px;
     padding:15px;
     border-radius:10px;
     box-shadow:0 2px 5px rgba(0,0,0,0.08);
+}
+
+.notice{
+    background:#fff8e1;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    font-weight:bold;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
 footer{
@@ -104,49 +110,80 @@ footer{
 
 <header>
     <h1>🌈 花水地区子ども大会 🌈</h1>
-    <p>みんなで遊ぼう！学ぼう！楽しもう！</p>
+    <p>小学校でスポーツや遊びなど、いろいろな体験をしてみよう！！</p>
 </header>
 
 <nav>
     <a href="#overview">開催概要</a>
-    <a href="#corner">コーナー紹介</a>
+    <a href="#schedule">開催時間</a>
+    <a href="#corner">コーナー</a>
     <a href="#map">会場案内</a>
-    <a href="#faq">よくある質問</a>
+    <a href="#faq">Q&A</a>
 </nav>
+
+<section>
+    <div class="notice">
+        🚶 徒歩でご来場ください。<br><br>
+        🚲 保護者・スタッフのみ自転車利用できます。<br><br>
+        ❌ 子どもの自転車での来場はできません。
+    </div>
+</section>
 
 <section id="overview">
     <h2>📅 開催概要</h2>
     <div class="info">
-        <p><strong>日時：</strong>令和○年○月○日（○）</p>
-        <p><strong>時間：</strong>○:○○ ～ ○:○○</p>
-        <p><strong>会場：</strong>○○小学校</p>
-        <p><strong>参加費：</strong>無料</p>
+        <p><strong>開催日：</strong>2026年6月7日（日）</p>
+        <p><strong>会場：</strong>花水小学校</p>
+    </div>
+</section>
+
+<section id="schedule">
+    <h2>⏰ 開催時間</h2>
+
+    <div class="info">
+        <h3>① 1・3・5年生（幼児）</h3>
+        <p>
+        8:30 集合・開会式<br>
+        8:45～10:15 コーナー体験<br>
+        流れ解散
+        </p>
+    </div>
+
+    <br>
+
+    <div class="info">
+        <h3>② 2・4・6年生（幼児）</h3>
+        <p>
+        10:45 集合・開会式<br>
+        11:00～12:30 コーナー体験<br>
+        流れ解散
+        </p>
     </div>
 </section>
 
 <section id="corner">
-    <h2>🎪 コーナー紹介</h2>
+    <h2>🎪 コーナーエリア</h2>
 
     <div class="card-container">
 
         <div class="card">
-            <h3>🚒 起震車体験</h3>
-            <p>地震のゆれを体験して、防災について学ぼう！</p>
+            <h3>🏃 運動場</h3>
+            <p>スポーツや体験コーナーがあります。</p>
         </div>
 
         <div class="card">
-            <h3>🎯 ゲームコーナー</h3>
-            <p>楽しいゲームに挑戦して景品をゲット！</p>
+            <h3>🏀 体育館</h3>
+            <p>ゲームや楽しい体験コーナーがあります。</p>
         </div>
 
         <div class="card">
-            <h3>🎨 工作コーナー</h3>
-            <p>オリジナル作品を作ってみよう！</p>
+            <h3>🎨 体育室</h3>
+            <p>短冊作りやチャレンジコーナーがあります。</p>
         </div>
 
         <div class="card">
-            <h3>⚽ スポーツコーナー</h3>
-            <p>体を動かして元気いっぱい遊ぼう！</p>
+            <h3>🌳 中庭</h3>
+            <p>屋外で楽しめるコーナーがあります。</p>
         </div>
 
     </div>
@@ -154,9 +191,15 @@ footer{
 
 <section id="map">
     <h2>🗺️ 会場案内</h2>
+
     <div class="info">
-        <p>会場マップを掲載予定です。</p>
-        <img src="map.jpg" alt="会場マップ" style="max-width:100%;">
+        <ul>
+            <li>🏃 運動場コーナー</li>
+            <li>🏀 体育館コーナー</li>
+            <li>🎨 体育室コーナー</li>
+            <li>🌳 中庭コーナー</li>
+            <li>🏁 受付で受付後、各コーナーへお進みください。</li>
+        </ul>
     </div>
 </section>
 
@@ -165,29 +208,33 @@ footer{
 
     <div class="qa">
         <strong>Q. 申込みは必要ですか？</strong><br>
-        A. 当日参加できます。
+        A. 事前に学校からのお知らせをご確認ください。
     </div>
 
     <div class="qa">
         <strong>Q. 雨の場合は？</strong><br>
-        A. ホームページでお知らせします。
+        A. ホームページ等でお知らせします。
     </div>
 
     <div class="qa">
         <strong>Q. 駐車場はありますか？</strong><br>
-        A. 台数に限りがありますので徒歩・自転車にご協力ください。
+        A. 駐車場はありません。
+    </div>
+
+    <div class="qa">
+        <strong>Q. 自転車で行けますか？</strong><br>
+        A. 保護者・スタッフのみ利用できます。
     </div>
 
 </section>
 
 <section>
-    <h2>📢 お知らせ</h2>
+    <h2>📧 お問い合わせ</h2>
     <div class="info">
-        <ul>
-            <li>開催情報は随時更新します。</li>
-            <li>当日は係員の案内にご協力ください。</li>
-            <li>忘れ物は本部までお問い合わせください。</li>
-        </ul>
+        <p>
+        花水地区青少年指導員<br>
+        hanamizu_kidsfes@googlegroups.com
+        </p>
     </div>
 </section>
 
